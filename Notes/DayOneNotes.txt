@@ -1,0 +1,85 @@
+
+Full Stack Web Development Training:
+
+Phase 1: 
+	Agile Scrum Methodology
+	Version Control System using GIT
+	HTML, CSS and Bootstrap CSS
+	Fundamentals of JavaScript
+	
+----------------------------------------------
+
+Agile Process:
+
+	Software Development Life-Cycle:
+	
+		1. Gather Requirements
+		2. Analysis
+		3. Design
+		4. Coding
+		5. Testing
+		6. Maintenance
+		
+-----------------------------------------------
+
+Agile Process:
+
+	Where developers and testers works together. 
+	And they are known as Agile Team.
+	
+	Agile Team = Project Managers + Developers + Testers + Consultants
+	
+Agile:
+
+	A software development process model where development and testing activities go parallelly and collaboratively.
+	
+	In Agile Process, instead of documentation of software development, we need to uses Epics and Stories:
+	
+	Epic: Large and High Level Requirement.
+
+	Feture: We have divide Epic into smaller piece i.e. Called Features.
+
+	Story: It is smallest requirement that comes when features gets divided and assigned to development and testers.
+
+------------------------------------------------------------
+
+Roles in Agile:
+
+1. Product Owner
+
+	PO is responsible for gathering the requirement from customer/stakeholder.
+	PO prepares the first document as Product Backlog.
+	Product Backlog contains the Epic, Features and Stories.
+
+2. Scrum Master
+
+	Fascilitator or Intermeidator for an entire Agile Development Team.
+	Scrum Master doesn't developed the product or communicate with Customer.
+	He just makes sure everything works fine during development or not.
+	
+3. Agile Team(Scrum Team)
+
+	Developers + Testers + Team who work for a goal to deliver the project.
+	
+-----------------------------------------------------------------------------
+
+JIRA Tool:
+
+	Helps in Managing the Agile Process:
+		- Creating Backlogs
+		- Creating Sprints
+		- Updating Stories in Scrum Board
+		- Creating Scrum Team
+		- Preparing the Sprint Reports and so on.
+		
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
