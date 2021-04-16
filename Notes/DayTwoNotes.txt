@@ -1,0 +1,118 @@
+
+Version Control System using GIT and GITHUB:
+
+1. To check whether git CLI is installed or not:
+
+	git --version
+	
+2. To create github account:
+
+--------------------------------------------------------------
+
+	GIT != GITHUB
+
+	GIT - Distributed Version Control System
+	
+	GITHUB - A website that helps in managing server repositories.
+	
+	Version Control System helps in tracking changes in files and folders.
+	It also helps in collabrating with teams.
+	
+	Version Control System Types:
+		- Centralized Version Control System
+		- Distributed Version Control System
+	
+-------------------------------------------------------------
+
+1. To initialize the local repositories: (Only First Time)
+
+	git init
+	
+2. To check the tracked/untracked the files and folder
+
+	git status
+	
+3. To track the pending files and folders:
+
+	git add .
+	
+4. To check the tracked/untracked the files and folder:
+
+	git status
+	
+5. To commit all the tracked files and folder:
+
+	git commit -m "First Commit"
+ 
+6. To set the remote origin for server repositories: (Only First Time)
+
+	git remote add origin https://github.com/mgunwani/git-test-project.git
+	
+7. To push the pending commit from local to server repositories:
+
+	git push -u origin master
+ 
+-----------------------------------------------------------
+
+git config --global user.email "gunwani.madhu@gmail.com"
+git config --global user.name "mgunwani"
+
+------------------------------------------------------------
+
+To check the list of branches:
+
+	git branch
+	
+To create new branch:
+
+	git branch BranchA
+	
+To checkout to new branch:
+
+	git checkout BranchA
+
+-----------------------------------------------------------
+
+To Merge branchA with master:
+
+1. To swithch to the master branch
+
+	git checkout master
+	
+2. To merge branch
+
+	git merge BranchA
+	
+3. To push the merge changes
+
+	git push -u origin master
+	
+-----------------------------------------------------------
+
+-- To delete branch from Local Repository:
+
+	git branch -d BranchA
+	
+-- To delete branch from server Repository:
+
+	git push origin --delete BranchA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
