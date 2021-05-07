@@ -1,0 +1,246 @@
+
+Agile Scum Methodology
+GIT and GITHUB
+HTML5 Fundamentals
+CSS3 Fundamentals
+Bootstrap CSS Library
+JavaScript
+
+---------------------------------
+
+	ctrl+/	:	To comment/uncomment
+
+---------------------------------
+
+HTML5 Fundamentals
+
+	- HTML is a HyperText Markup Language.
+	- Helps us to create web pages for any websites.
+	
+<!DOCTYPE html>
+
+	- Document Type Declaration.
+	- Instructs the web browser that this document is an HTML document.
+	- It is case insensitive.
+
+-------------------------------
+
+Types of Markup Tags:
+
+	1. Container Tags
+	
+		Any markup tag that has start and end tag is container tag.
+	
+		<h1>....</h1>
+		<p>.....</p>
+		<table>....</table>
+	
+	2. Empty Tags (Self Closing Tags)
+	
+		Any markup that are self closing or not mandatory to end them are empty tags.
+		
+		<hr> or <hr />
+	
+-------------------------------
+	
+HTML5 Heading Tags:
+
+	Heading Tags are container tags.
+	Container Tags that needs to close.
+	<h1> to <h6>
+	
+	<h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+-------------------------------
+
+Paragraph Tag:
+
+	<p>..</p>
+	<p align="justify">..</p>
+	
+-------------------------------
+
+Text Formatting Tags:
+
+<b>Bold Text</b>
+    <br /><br />
+    <i>Italic Text</i>
+    <br /><br />
+    <u>Underlined Text</u>
+    <br /><br />
+    <del>Deleted Text</del>
+    <br /><br />
+    <ins>Inserted Text</ins>
+    <br /><br />
+    <em>Emphasized Text</em>
+    <br /><br />
+    This is displaying <sub>sub</sub> script.
+    <br /><br />
+    This is displaying <sup>super</sup> script.
+    <br /><br />
+    This is displaying <mark>Highlighted</mark> text.\
+    <br /><br />
+    <strong>Strong Text</strong>
+    <br /><br />
+    This is <small>small</small> text.
+
+    <blockquote>
+        <p>"Learn from Yesterday, Live for Today, Hope for Tomorrow. Learn from Yesterday, Live for Today, Hope for
+            Tomorrow. Learn from Yesterday, Live for Today, Hope for Tomorrow."</p>
+        <cite>&mdash;Albert Einstein</cite>
+    </blockquote>
+
+    <address>
+        123, Civil Lines, <br />
+        New Delhi - 110006, <br />
+        Club Road, India <br />
+    </address>
+	
+-------------------------------------------------------------
+
+Anchor Tag: HTML5 Links
+
+	<a href="https://www.google.com/">Google</a> |
+	
+	Targets for Links:
+	
+	_blank: Opens the document in a new tab.
+	
+	_parent: Opens the document in the parent window.
+	
+	_self: Opens the document in the same windows and its default.
+	
+	_top: Opsn the documnet in the full browser window.
+	
+-------------------------------------------------------------
+
+HTML Tables:
+
+<table border="1" cellspacing="0" cellpadding="10">
+        <caption>Customer Details</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Kartik Sharma</td>
+                <td>23</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>King Kochhar</td>
+                <td>30</td>
+                <td>2200</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>John Smith</td>
+                <td>40</td>
+                <td>3000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total:</th>
+                <th>INR 6400</th>
+            </tr>
+        </tfoot>
+    </table>
+	
+---------------------------------------------------------
+
+HTML Lists:
+
+	1. Unordered Lists: With no specific order. e.g. bullets.
+		Types: disc, circle and square
+	
+		 <ul type="square">
+			<li>Input Devices
+				<ul>
+					<li>Keyboard</li>
+					<li>Mouse</li>
+					<li>Scanner</li>
+					<li>Microphone</li>
+				</ul>
+			<li>Output Devices
+			<li>Storage Devices
+		</ul>
+	
+	2. Ordered Lists: With Specific order. e.g. numbers, alphabets etc.
+			Types: 1, A, a, I, i also start=3 (start attribute should use number)
+	
+		<ol type="i">
+			<li>Input Devices</li>
+			<ul>
+				<li>Keyboard</li>
+				<li>Mouse</li>
+				<li>Scanner</li>
+				<li>Microphone</li>
+			</ul>
+			<li>Output Devices</li>
+			<li>Storage Devices</li>
+			<li>Input Devices</li>
+			<li>Output Devices</li>
+			<li>Storage Devices</li>
+			<li>Input Devices</li>
+			<li>Output Devices</li>
+			<li>Storage Devices</li>
+		</ol>
+	
+	3. Description Lists: To list of terms and their descriptions.
+	
+		<dl>
+			<dt>Input Devices</dt>
+			<dd>These devices help me to take input from end user.</dd>
+			<dt>Input Devices</dt>
+			<dd>These devices help me to give output to the end user.</dd>
+			<dt>Storage Devices</dt>
+			<dd>These devices help me to store the data.</dd>
+		</dl>
+
+---------------------------------------------------------------
+
+HTML5 Forms:
+
+	<form>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" />
+        <hr />
+        Username: <input type="text" name="username" id="username" />
+        Password: <input type="password" name="password" id="password" />
+        <hr />
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" placeholder="Enter Username" />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" placeholder="Enter Password" />
+    </form>
+
+--------------------
+
+		<input type="submit" value="Register" />
+        <input type="reset" value="Clear Fields" />
+        <hr/>
+        <button type="submit">Register</button>
+        <button type="reset">Clear All Fields</button>
+
+
+
+
+
+
+
+
