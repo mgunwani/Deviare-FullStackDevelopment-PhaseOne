@@ -3,7 +3,7 @@ Full Stack Web Development Training:
 
 Phase 1: 
 	Agile Scrum Methodology
-	Version Control System using GIT
+	Version Control System using GIT and GITHUB
 	HTML, CSS and Bootstrap CSS
 	Fundamentals of JavaScript
 	

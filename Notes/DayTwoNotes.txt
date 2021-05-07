@@ -97,6 +97,12 @@ To Merge branchA with master:
 
 	git push origin --delete BranchA
 
+-----------------------------------------------------------
+
+git clone https://github.com/mgunwani/Deviare-FullStackDevelopment-PhaseOne.git
+
+-----------------------------------------------------------
+
 
 
 
