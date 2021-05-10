@@ -1,0 +1,47 @@
+
+
+HTML:	describes what content has to be displayed over web page. (Content)
+CSS:	describes how the content has to be displayed over web page. (Presentation)
+JavaScript: describes how actions has to managed over web page. (Actions)
+
+CSS and Bootstrap CSS:
+
+Cascading Style Sheet: 
+
+	Helps in presentational technology that is used for website design.
+	Standard Style Sheet language used for describing the presentations.
+	
+	h1 {
+		color: navy;
+		font-style: italic;
+		font-family: cursive;
+	}
+	
+	h1 - selector
+	properties: color, font-style, font-family
+	values: navy, italic, cursive
+
+	Universal Selector: *
+	Element Selector: h1, p, header
+	Id Selector: #para1
+	Class Selector: .para1
+	
+-------------------------------------------------
+
+	Id and Class are Selectors in CSS and JavaScript:
+	
+	Id is associated with # prefix.
+	Class is associated with . prefix.
+	
+	Each element can have only one ID. Thus, ID's are unique.
+	Each element can have multiple classes. Thus, Classes are not unique.
+	
+	Element can have both, ID and Class.
+	
+--------------------------------------------------
+
+	Internal/Embedded Style Sheet
+	External Style Sheet
+	Inline Style Sheet
+	
+	
