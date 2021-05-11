@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Hello World</h2>
+
+    <p id="p1">Something Here</p>
+
+    <button type="button" onClick="sayHello()">Say Hello</button>
+
+    <button type="button" onClick="updateContent()">Update Content</button>
+
+    <hr />
+
+    <form>
+        <input type="text" id="number" placeholder="Enter Number" />
+        <button type="button" onClick="doCalculate()">Calculate</button>
+    </form>
+
+    <hr />
+    <a href="http://www.google.com" onClick="sayHello()" target="_blank">Click Me</a>
+
+    <script type="text/javascript">
+        function sayHello() {
+            alert('Hello to Everyone!!');
+            document.write('Hello Guys!!');
+            console.log('You clicked Me.');
+        }
+
+        function doCalculate() {
+            var result = document.getElementById('number').value;
+            alert("Calculated Value : " + result)
+        }
+
+        function updateContent() {
+            document.getElementById('p1').innerHTML = "You have updated content here.";
+        }
+    </script>
+
+</body>
+
+</html>

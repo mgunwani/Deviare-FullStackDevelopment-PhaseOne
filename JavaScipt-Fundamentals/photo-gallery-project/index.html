@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./myStyles.css">
+</head>
+
+<body>
+
+    <p id="desc">Hover over an image to display here..</p>
+
+    <div id="buttons">
+        <button onClick="showContent()">Show Content</button>
+        <button onClick="hideContent()">Hide Content</button>
+    </div>
+
+    <hr align="left" width="50%" />
+
+    <p id="content">This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+        General Public
+        License as published by the Free Software Foundation; either version 3 of the License, or at your option any
+        later version.This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+        General Public License as published by the Free Software Foundation; either version 3 of the License, or at your
+        option any later version.This program is free software; you can redistribute it and/or modify it under the terms
+        of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License,
+        or at your option any later version.</p>
+
+    <center>
+        <div>
+            <img src="./images/1.png" alt="TypeScript Fundamentals - Image One" onmouseover="update(this)"
+                onmouseout="undo()" />
+            <img src="./images/2.png" alt="TypeScript Fundamentals - Image Two" onmouseover="update(this)"
+                onmouseout="undo()" />
+            <img src="./images/3.png" alt="TypeScript Fundamentals - Image Three" onmouseover="update(this)"
+                onmouseout="undo()" />
+            <img src="./images/4.png" alt="TypeScript Fundamentals - Image Four" onmouseover="update(this)"
+                onmouseout="undo()" />
+            <img src="./images/5.png" alt="TypeScript Fundamentals - Image Five" onmouseover="update(this)"
+                onmouseout="undo()" />
+        </div>
+    </center>
+    <script src="./myScripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+JavaScript Fundamentals
+
+	- A powerful client-side scripting language.
+	- Helps to create dynamic content for the web.
+	- JavaScript is also open source, lightweight and cross-platform.
+	- It doesn't comple but it is interpreted with object oriented capabilities.
+	- NodeJS provides runtime environment to JavaScript.
+	- JavaScript is loosely-typed scripting language.
+	
+JavaScript can be implemented with HTML in two ways:
+
+	- Embedded/Internal JavaScript
+	
+		<script type="text/javascript">
+			alert('Hello World');
+		</script>
+	
+	- External JavaScript
+	
+		<script src="./scripts/myscript.js"></script>		
+	
+	- Inline JavaScript
+	
+
