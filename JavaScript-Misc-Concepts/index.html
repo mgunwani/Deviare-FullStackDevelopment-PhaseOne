@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="userForm">
+        First Name : <input type="text" name="firstName" />
+        <button onClick="setCookie()">Set Cookies</button>
+        <button onClick="getCookie()">Get Cookies</button>
+    </form>
+
+    <script>
+        function setCookie() {
+            var now = new Date();
+            now.setSeconds(now.getSeconds() + 10);
+            cookieValue = escape(document.userForm.firstName.value) + ";";
+
+            document.cookie = "name=" + cookieValue;
+            document.cookie = "expires=" + now.toUTCString() + ";";
+            document.write("Setting Cookies : Name = " + cookieValue);
+
+            // document.cookie = "username=Bhawna Gunwani"
+            // alert('Cookie Stored Successfully.');
+        }
+        function getCookie() {
+            if (document.cookie.length != 0) {
+                document.write(document.cookie)
+                // var array = document.cookie.split("=");
+                // alert("Name=" + array[0] + ", Value=" + array[1]);
+            } else {
+                alert('There is no cookie stored in document.');
+            }
+        }
+    </script>
+</body>
+
+</html>

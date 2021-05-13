@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <form>
+        First Name: <input type="text" id="firstName" />
+        <button class="save">Save Data</button>
+        <button class="access">Get Data</button>
+        <button class="delete">Delete Data</button>
+        <button class="deleteAll">Delete All Data</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        if (localStorage) {
+            $(document).ready(function () {
+                $(".save").click(function () {
+                    // Get First Name
+                    var firstName = $("#firstName").val();
+                    // Store to LocalStorage
+                    localStorage.setItem("first_name", firstName);
+                    alert('You first name stored in local storage.')
+                })
+                $(".access").click(function () {
+                    // Retrieve First Name
+                    alert("Hi, " + localStorage.getItem("first_name"));
+                })
+                $(".deleteAll").click(function () {
+                    // Delete First Name
+                    localStorage.clear();
+                })
+            })
+        } else {
+            alert("Your browser doesn't support localStorage.");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <form>
+        Last Name: <input type="text" id="lastName" />
+        <button class="save">Save Data</button>
+        <button class="access">Get Data</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        if (localStorage) {
+            $(document).ready(function () {
+                $(".save").click(function () {
+                    // Get First Name
+                    var firstName = $("#lastName").val();
+                    // Store to LocalStorage
+                    sessionStorage.setItem("l_name", firstName);
+                    alert('You last name stored in session storage.')
+                })
+                $(".access").click(function () {
+                    // Retrieve First Name
+                    alert("Hi, " + sessionStorage.getItem("l_name"));
+                })
+            })
+        } else {
+            alert("Your browser doesn't support localStorage.");
+        }
+    </script>
+</body>
+
+</html>
