@@ -1,0 +1,9 @@
+
+label.validation-error {
+    color:red;
+    margin: 5px;
+}
+
+.hide {
+    display: none;
+}

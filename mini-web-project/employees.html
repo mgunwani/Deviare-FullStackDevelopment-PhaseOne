@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Hello, world!</title>
+    <!-- Dashboard External StyleSheet Here -->
+    <link rel="stylesheet" href="./css/dashboard-styles.css" />
+    <link rel="stylesheet" href="./css/employeess-styles.css" />
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Admin Dashboard</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <span class="btn btn-light" id="welcomeMessage"></span>
+                <button class="btn btn-dark" onClick="signout();">Sign Out</button>
+            </li>
+        </ul>
+    </header>
+    <!-- Header End -->
+
+    <!-- Container Fluid Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./dashboard.html">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./employees.html">
+                                Manage Employees
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+
+                <!-- Dashboard Content Begin -->
+                <div>
+                    <form onsubmit="event.preventDefault();onFormSubmit();">
+                        <div class="form-group">
+                            <label for="fullName">Full Name: (Required)</label>
+                            <label class="validation-error hide" id="fullNameValidationError">The field is
+                                required.</label>
+                            <input type="text" name="fullName" id="fullName" class="form-control" />
+                        </div> <br />
+                        <div class="form-group">
+                            <label for="email">Email ID:</label>
+                            <input type="text" name="email" id="email" class="form-control" />
+                        </div> <br />
+                        <div class="form-group">
+                            <label for="salary">Salary:</label>
+                            <input type="text" name="salary" id="salary" class="form-control" />
+                        </div> <br />
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city" class="form-control" />
+                        </div> <br />
+                        <br />
+                        <div class="form-group">
+                            <input type="submit" value="Add New Employee" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+                <br />
+                <div>
+                    <table class="table table-striped" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Email Id</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- populating table row from script -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Dashboard Content End -->
+
+            </main>
+        </div>
+    </div>
+    <!-- Container Fluid End -->
+
+    <script src="./scripts/dashboard-script.js"></script>
+    <script src="./scripts/employees-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
